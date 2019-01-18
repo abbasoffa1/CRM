@@ -14,3 +14,20 @@ C:\Users\pc\source\repos\CRM\CRM\obj\Debug\CRM.csproj.CopyComplete
 C:\Users\pc\source\repos\CRM\CRM\obj\Debug\CRM.exe
 C:\Users\pc\source\repos\CRM\CRM\obj\Debug\CRM.pdb
 C:\Users\pc\source\repos\CRM\CRM\obj\Debug\CRM.User.resources
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\CRM.exe.config
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\CRM.exe
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\CRM.pdb
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\EntityFramework.dll
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\EntityFramework.xml
+C:\Users\pc\Desktop\New folder\CRM\CRM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.User.resources
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.Login.resources
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.Properties.Resources.resources
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.csproj.CopyComplete
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.exe
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.pdb
+C:\Users\pc\Desktop\New folder\CRM\CRM\obj\Debug\CRM.Dashboard.resources

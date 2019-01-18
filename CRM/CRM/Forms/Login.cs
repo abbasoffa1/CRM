@@ -24,7 +24,7 @@ namespace CRM
                     //Username ve Passwordun duz olub olmadigi yoxlanilir
                     if ((user.Username == txtUser.Text) && (user.Password == txtPass.Text))
                     {
-                        User dsh = new User();
+                        Dashboard dsh = new Dashboard();
                         dsh.ShowDialog();
                     }
                 }

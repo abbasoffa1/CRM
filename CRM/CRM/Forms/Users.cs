@@ -23,7 +23,6 @@ namespace CRM
                 //Tabpage elave olunur Databasedeki User listine esasen
                 TabPage tabPage = new TabPage();
                 tabPage.Text = user.Name;
-                tabPage.Name = user.Name + "-" + user.Id;
                 //DataGridView Yaradirig bu secdiyimiz userin butun tasklarini gosterir
                 DataGridView dgv = new DataGridView();
                 dgv.EnableHeadersVisualStyles = false;
@@ -36,7 +35,6 @@ namespace CRM
                     column1.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                     column1.HeaderText = item.Name;
                     column1.Width = 150;
-
                     dgv.Columns.Add(column1);
                 }
                 foreach (var item in db.vwTaskLists.ToList().Where(t=>t.User_Name==user.Name).ToList())
@@ -51,8 +49,24 @@ namespace CRM
             }
             tabControl.Location = new Point(40, 40);
             tabControl.Size = new Size(800, 620);
-            //TabControl elave olunur s
+            //TabControl elave olunur 
             this.Controls.Add(tabControl);
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Model.User user = new Model.User();
+            user.Name = txtFullName.Text;
+            user.Password = txtPass.Text;
+            user.Username = txtUser.Text;
+            user.Email = txtEmail.Text;
+            db.Users.Add(user);
+            db.SaveChanges();
+            CreateTabControl();
+
+            txtEmail.ResetText();
+            txtFullName.ResetText();
+            txtPass.ResetText();
+            txtUser.ResetText();
         }
     }
 }

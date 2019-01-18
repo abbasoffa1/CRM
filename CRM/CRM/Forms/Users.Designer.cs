@@ -33,7 +33,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtPass);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtPhone);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.label1);
@@ -71,6 +71,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label4
             // 
@@ -93,16 +94,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 215);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 22);
+            this.label3.Size = new System.Drawing.Size(51, 22);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Phone";
+            this.label3.Text = "Email";
             // 
-            // txtPhone
+            // txtEmail
             // 
-            this.txtPhone.Location = new System.Drawing.Point(19, 252);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(382, 29);
-            this.txtPhone.TabIndex = 4;
+            this.txtEmail.Location = new System.Drawing.Point(19, 252);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(382, 29);
+            this.txtEmail.TabIndex = 4;
             // 
             // label2
             // 
@@ -141,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
-            this.ClientSize = new System.Drawing.Size(1157, 674);
+            this.ClientSize = new System.Drawing.Size(1362, 674);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(255)))));
@@ -162,7 +163,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label1;
