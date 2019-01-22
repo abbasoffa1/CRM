@@ -12,7 +12,7 @@
         <AssociationConnector Association="CRMModel.Comments_fk0" ManuallyRouted="false" />
         <AssociationConnector Association="CRMModel.Tasks_fk1" ManuallyRouted="false" />
         <AssociationConnector Association="CRMModel.Tasks_fk0" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="CRMModel.vwTaskList" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CRMModel.vwTaskList" Width="1.5" PointX="0.75" PointY="6.25" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

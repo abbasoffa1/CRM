@@ -13,6 +13,8 @@
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="Date" Type="datetime" Nullable="false" />
           <Property Name="Description" Type="ntext" />
+          <Property Name="Issue" Type="ntext" />
+          <Property Name="IssueDate" Type="datetime" />
         </EntityType>
         <EntityType Name="Customer">
           <Key>
@@ -142,6 +144,8 @@ warning 6002: The table/view 'CRM.dbo.vwTaskList' does not have a primary key de
           <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="User" Relationship="Self.Comments_fk0" FromRole="Comments" ToRole="Users" />
+          <Property Name="Issue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IssueDate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Customer">
           <Key>
@@ -260,6 +264,8 @@ warning 6002: The table/view 'CRM.dbo.vwTaskList' does not have a primary key de
           <EntitySetMapping Name="Comments">
             <EntityTypeMapping TypeName="CRMModel.Comment">
               <MappingFragment StoreEntitySet="Comments">
+                <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+                <ScalarProperty Name="Issue" ColumnName="Issue" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="Date" ColumnName="Date" />

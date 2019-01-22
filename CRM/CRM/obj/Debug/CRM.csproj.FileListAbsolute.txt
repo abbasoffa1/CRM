@@ -51,3 +51,4 @@ C:\Users\pc\Desktop\fkj\CRM\CRM\obj\Debug\CRM.pdb
 C:\Users\pc\Desktop\fkj\CRM\CRM\obj\Debug\CRM.CreateUser.resources
 C:\Users\pc\Desktop\fkj\CRM\CRM\obj\Debug\CRM.Tasks.resources
 C:\Users\pc\Desktop\fkj\CRM\CRM\obj\Debug\CRM.Customers.resources
+C:\Users\pc\Desktop\fkj\CRM\CRM\obj\Debug\CRM.Comments.resources

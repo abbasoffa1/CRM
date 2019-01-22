@@ -9,6 +9,8 @@
     <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="User" Relationship="Self.Comments_fk0" FromRole="Comments" ToRole="Users" />
+    <Property Name="Issue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IssueDate" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>

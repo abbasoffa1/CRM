@@ -8,6 +8,8 @@
     <Property Name="UserId" Type="int" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
     <Property Name="Description" Type="ntext" />
+    <Property Name="Issue" Type="ntext" />
+    <Property Name="IssueDate" Type="datetime" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
