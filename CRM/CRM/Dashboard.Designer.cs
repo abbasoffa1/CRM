@@ -42,6 +42,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCrUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnComments)).BeginInit();
@@ -112,7 +113,7 @@
             // 
             // btnUsers
             // 
-            this.btnUsers.BackColor = System.Drawing.Color.White;
+            this.btnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(255)))));
             this.btnUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
@@ -128,6 +129,9 @@
             // dgvTasks
             // 
             this.dgvTasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTasks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTasks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvTasks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTasks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -179,13 +183,24 @@
             this.Column4.HeaderText = "STATUS";
             this.Column4.Name = "Column4";
             // 
+            // btnCrUser
+            // 
+            this.btnCrUser.Location = new System.Drawing.Point(1171, 317);
+            this.btnCrUser.Name = "btnCrUser";
+            this.btnCrUser.Size = new System.Drawing.Size(179, 45);
+            this.btnCrUser.TabIndex = 0;
+            this.btnCrUser.Text = "Create User";
+            this.btnCrUser.UseVisualStyleBackColor = true;
+            this.btnCrUser.Click += new System.EventHandler(this.btnCrUser_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1200, 741);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.btnCrUser);
             this.Controls.Add(this.dgvTasks);
             this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.btnTasks);
@@ -199,6 +214,7 @@
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnComments)).EndInit();
@@ -224,5 +240,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button btnCrUser;
     }
 }

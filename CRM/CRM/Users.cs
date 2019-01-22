@@ -52,21 +52,11 @@ namespace CRM
             //TabControl elave olunur 
             this.Controls.Add(tabControl);
         }
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            Model.User user = new Model.User();
-            user.Name = txtFullName.Text;
-            user.Password = txtPass.Text;
-            user.Username = txtUser.Text;
-            user.Email = txtEmail.Text;
-            db.Users.Add(user);
-            db.SaveChanges();
-            CreateTabControl();
+       
 
-            txtEmail.ResetText();
-            txtFullName.ResetText();
-            txtPass.ResetText();
-            txtUser.ResetText();
+        private void User_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

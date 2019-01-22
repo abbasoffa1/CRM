@@ -56,22 +56,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Dashboard.cs">
+    <Compile Include="Comments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dashboard.Designer.cs">
+    <Compile Include="Comments.Designer.cs">
+      <DependentUpon>Comments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateComment.Designer.cs">
+      <DependentUpon>CreateComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCustomer.Designer.cs">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTask.Designer.cs">
+      <DependentUpon>CreateTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Users.cs">
+    <Compile Include="Tasks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Users.Designer.cs">
+    <Compile Include="Tasks.Designer.cs">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
+    <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Comment.cs">
@@ -106,13 +148,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Dashboard.resx">
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Users.resx">
+    <EmbeddedResource Include="Tasks.resx">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login.resx">
+    <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
