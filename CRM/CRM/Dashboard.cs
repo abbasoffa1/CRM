@@ -68,23 +68,5 @@ namespace CRM
             CreateUser crUser = new CreateUser();
             crUser.ShowDialog();
         }
-
-        private void btnCrTask_Click(object sender, EventArgs e)
-        {
-            CreateTask crtask = new CreateTask();
-            crtask.ShowDialog();
-        }
-
-        private void btnCrCustomer_Click(object sender, EventArgs e)
-        {
-            CreateCustomer crtCustmt = new CreateCustomer();
-            crtCustmt.ShowDialog();
-        }
-
-        private void btnCrComment_Click(object sender, EventArgs e)
-        {
-            CreateComment crtComment = new CreateComment();
-            crtComment.ShowDialog();
-        }
     }
 }

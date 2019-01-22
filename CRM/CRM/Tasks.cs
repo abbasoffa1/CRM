@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CRM.Model;
 namespace CRM
@@ -20,6 +15,7 @@ namespace CRM
             FillDgv();
             FillAllComboBoxs();
         }
+        //DataGridView Doldurulur StartTime esasinda en yeni taskdan en kohne taska qeder
         public void FillDgv()
         {
             dgvTasks.Rows.Clear();
@@ -29,6 +25,7 @@ namespace CRM
             }
             Reset();
         }
+        //ComboBoxlar doldurulur
         public void FillAllComboBoxs()
         {
             foreach (var item in db.Users.ToList())
@@ -42,6 +39,7 @@ namespace CRM
             cmbStatus.Items.Add("Finished");
             cmbStatus.Items.Add("Continue");
         }
+        //Task Create
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Model.Task newTask = new Model.Task();
@@ -64,6 +62,7 @@ namespace CRM
                 FillDgv();
             }
         }
+        //Butun datalari sifirlayirig
         public void Reset()
         {
             txtTaskName.ResetText();
@@ -89,6 +88,7 @@ namespace CRM
             cmbCustomer.Text =task.CustomerId+"-"+ task.Customer.FullName;
             dtpStartDate.Value = task.Date;
         }
+        //DataGridViewda datalar update olunur
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtTaskName.Text) || string.IsNullOrEmpty(cmbCustomer.Text) || string.IsNullOrEmpty(cmbUser.Text))
@@ -116,6 +116,7 @@ namespace CRM
                 FillDgv();
             }
         }
+        //DataGridViewda data silme
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DialogResult r = MessageBox.Show("Are you sure delete this task?", "Delete", MessageBoxButtons.YesNo);
