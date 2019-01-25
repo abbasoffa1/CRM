@@ -64,7 +64,7 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvComments.Location = new System.Drawing.Point(14, 17);
+            this.dgvComments.Location = new System.Drawing.Point(12, 17);
             this.dgvComments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvComments.Name = "dgvComments";
             this.dgvComments.Size = new System.Drawing.Size(909, 665);
@@ -136,7 +136,6 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Enabled = false;
             this.lblDate.Location = new System.Drawing.Point(19, 500);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(99, 18);

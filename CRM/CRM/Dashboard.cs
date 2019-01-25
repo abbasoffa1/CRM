@@ -45,8 +45,8 @@ namespace CRM
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.ShowDialog();
+            Application.Exit();
+            this.Hide();
         }
 
         //DataGridView doldurulur vaxta gore son 20 task ile Yeniden kohneye dogru
@@ -63,6 +63,7 @@ namespace CRM
 
         }
 
+        //Create User button
         private void btnCrUser_Click(object sender, EventArgs e)
         {
             CreateUser crUser = new CreateUser();

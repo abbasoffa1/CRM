@@ -17,7 +17,7 @@ namespace CRM
         {
             InitializeComponent();
         }
-
+        //Yeni bir user yaradilir
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Model.User user = new Model.User();

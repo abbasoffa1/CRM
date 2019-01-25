@@ -42,21 +42,15 @@ namespace CRM
                     //Datalar rowlara doldurulur
                     dgv.Rows.Add(item.Id,item.Task_Name, item.User_Name, item.Customer_Name, item.Start_Work_Time.ToString("HH:mm dd-MM-yyyy"), item.Finish_Work_Time==null?"":Convert.ToDateTime(item.Finish_Work_Time).ToString("HH:mm dd-MM-yyyy"), item.Status);
                 }
-                dgv.Size = new Size(780, 580);
+                dgv.Size = new Size(1100, 580);
                 dgv.ForeColor = Color.Black;
                 tabPage.Controls.Add(dgv);
                 tabControl.Controls.Add(tabPage);
             }
             tabControl.Location = new Point(40, 40);
-            tabControl.Size = new Size(800, 620);
+            tabControl.Size = new Size(1100, 620);
             //TabControl elave olunur 
             this.Controls.Add(tabControl);
-        }
-       
-
-        private void User_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

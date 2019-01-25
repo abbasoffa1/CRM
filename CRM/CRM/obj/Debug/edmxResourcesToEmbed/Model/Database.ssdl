@@ -41,6 +41,7 @@
     <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsAdmin" Type="bit" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'CRM.dbo.vwTaskList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -62,7 +63,9 @@ warning 6002: The table/view 'CRM.dbo.vwTaskList' does not have a primary key de
     <Property Name="Status" Type="varchar" MaxLength="8" Nullable="false" />
   </EntityType>
   <Association Name="Comments_fk0">
-    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">

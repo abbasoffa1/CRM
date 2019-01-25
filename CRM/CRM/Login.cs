@@ -19,14 +19,22 @@ namespace CRM
                 MessageBox.Show("Please not use empty space!");
             }else
             {
+                var users = false;
                 foreach (var user in db.Users.ToList())
                 {
                     //Username ve Passwordun duz olub olmadigi yoxlanilir
                     if ((user.Username == txtUser.Text) && (user.Password == txtPass.Text))
                     {
+                        users = true;
                         Dashboard dsh = new Dashboard();
                         dsh.ShowDialog();
+                        Application.Exit();
+                        this.Hide();
                     }
+                }
+                if (users == false)
+                {
+                    MessageBox.Show("Username or password is wrong!");
                 }
             }
         }

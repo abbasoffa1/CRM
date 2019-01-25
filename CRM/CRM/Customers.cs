@@ -19,6 +19,7 @@ namespace CRM
             InitializeComponent();
             FillDgv();
         }
+        //DataGrid View doldurulur
         public void FillDgv()
         {
             dgvCustomers.Rows.Clear();
@@ -27,7 +28,7 @@ namespace CRM
                 dgvCustomers.Rows.Add(item.Id, item.FullName, item.Phone, item.Email);
             }
         }
-
+        //Customer Yaradilir
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Customer cstmr = new Customer();
@@ -45,6 +46,7 @@ namespace CRM
                 Reset();
             }
         }
+        //0-lanir hersey
         public void Reset()
         {
             txtEmail.ResetText();
@@ -58,6 +60,7 @@ namespace CRM
             FillDgv();
         }
 
+        //Silme funskiyasi
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
@@ -72,6 +75,7 @@ namespace CRM
             }
         }
 
+        //Yenilenir
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtFullName.Text) || string.IsNullOrEmpty(txtPhone.Text))
@@ -88,7 +92,7 @@ namespace CRM
                 Reset();
             }
         }
-
+        //Secilir row
         private void dgvCustomers_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int id = Convert.ToInt32(dgvCustomers.Rows[e.RowIndex].Cells[0].Value.ToString());
